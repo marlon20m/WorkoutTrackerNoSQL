@@ -1,5 +1,5 @@
 // get all workout data from back-end
-import Chart from 'chart.js';
+var Chart = require('chart.js');
 var myChart = new Chart(ctx, {
   externals: {
       moment: 'moment'
