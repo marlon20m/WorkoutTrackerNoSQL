@@ -1,4 +1,12 @@
 // get all workout data from back-end
+import Chart from 'chart.js';
+var myChart = new Chart(ctx, {
+  externals: {
+      moment: 'moment'
+  }
+});
+var ctx = document.getElementById('myChart');
+
 
 fetch("/api/workouts/range")
   .then(response => {
